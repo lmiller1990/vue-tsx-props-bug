@@ -6,8 +6,8 @@ const Bar = defineComponent<{ foo: string }>({
   }
 })
 
-export const App = defineComponent<{ foo: string }>({
-  setup(props) {
-    return () => <Bar foo={props.foo} />
+export const App = defineComponent({
+  setup() {
+    return () => <Bar foo='foo' />
   }
 })
